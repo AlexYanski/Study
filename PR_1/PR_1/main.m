@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Person.h"
 #import "House.h"
+#import "Programmer.h"
 
 NSInteger gTestGlobal = 1;
 
@@ -17,7 +18,7 @@ int main(int argc, const char * argv[]) {
     Person *person1 = [Person alloc];
     person1 = [person1 init];
     
-    Person *person2 = [[Person alloc]initWithName:@"Jack" andAge:30];//[Person person];//[[Person alloc] init];
+    Programmer *person2 = [[Programmer alloc]init];//Person *person2 = [[Person alloc]initWithName:@"Jack" andAge:30];//[Person person];//[[Person alloc] init];
     
     Person *person3 = [Person new];
     
@@ -31,6 +32,7 @@ int main(int argc, const char * argv[]) {
     
     //[person2 setAge:30];
     //[person2 setName:@"Misha"];
+    [person2 setProgExp:1];
     [person2 descriptionOfPerson];
     
     [person3 setAge:35];

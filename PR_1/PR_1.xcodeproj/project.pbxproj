@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D35FB721E15055200AB746F /* Programmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D35FB711E15055200AB746F /* Programmer.m */; };
 		3D9313B91E13985C00EABE95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9313B81E13985C00EABE95 /* main.m */; };
 		3D9313C11E13988C00EABE95 /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9313C01E13988C00EABE95 /* House.m */; };
 		3D9313C41E1398C200EABE95 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9313C31E1398C200EABE95 /* Person.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D35FB701E15055200AB746F /* Programmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Programmer.h; sourceTree = "<group>"; };
+		3D35FB711E15055200AB746F /* Programmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Programmer.m; sourceTree = "<group>"; };
 		3D9313B51E13985C00EABE95 /* PR_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PR_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9313B81E13985C00EABE95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D9313BF1E13988C00EABE95 /* House.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
@@ -64,10 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				3D9313B81E13985C00EABE95 /* main.m */,
-				3D9313BF1E13988C00EABE95 /* House.h */,
-				3D9313C01E13988C00EABE95 /* House.m */,
 				3D9313C21E1398C200EABE95 /* Person.h */,
 				3D9313C31E1398C200EABE95 /* Person.m */,
+				3D9313BF1E13988C00EABE95 /* House.h */,
+				3D9313C01E13988C00EABE95 /* House.m */,
+				3D35FB701E15055200AB746F /* Programmer.h */,
+				3D35FB711E15055200AB746F /* Programmer.m */,
 			);
 			path = PR_1;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				3D9313C41E1398C200EABE95 /* Person.m in Sources */,
 				3D9313C11E13988C00EABE95 /* House.m in Sources */,
 				3D9313B91E13985C00EABE95 /* main.m in Sources */,
+				3D35FB721E15055200AB746F /* Programmer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +264,7 @@
 				3D9313BE1E13985C00EABE95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

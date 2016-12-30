@@ -22,32 +22,37 @@ int main(int argc, const char * argv[]) {
     
     Person *person3 = [Person new];
     
-    House *house = [[House alloc] initWithAddress:@"Victory St."];
+    //House *house = [[House alloc] initWithAddress:@"Victory St."];
     
     //[house setAddress:@"Victory St."];
     
     [person1 setAge:25];
     [person1 setName:@"Sasha"];
-    [person1 descriptionOfPerson];
+    [person1 setAddress:@"M.Tank"];
+    //[person1 descriptionOfPerson];
     
     //[person2 setAge:30];
     //[person2 setName:@"Misha"];
     [person2 setProgExp:1];
-    [person2 descriptionOfPerson];
+    //[person2 descriptionOfPerson];
     
     [person3 setAge:35];
     [person3 setName:@"Jake"];
-    [person3 descriptionOfPerson];
+    //[person3 descriptionOfPerson];
     
-    [house settlePerson:person1];
-    [house descriptionOfHouse];
+    //[house settlePerson:person1];
+    //[house descriptionOfHouse];
+    NSLog(@"%@",[person1 name]);
     
-    NSLog(@"%li",[person1 testStatic]);
-    NSLog(@"%li",gTestGlobal);
+    person1 -> _name=@"Mike";
+    
+    NSLog(@"%@",[person1 name]);
+    //NSLog(@"%li",[person1 testStatic]);
+    [person2 descriptionOfPerson];
+    NSLog(@"%li",[person2 age]);
     
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+            // NSLog(@"Hello, World!");
     }
     return 0;
 }

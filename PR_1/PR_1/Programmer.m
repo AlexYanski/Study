@@ -18,6 +18,7 @@
 }
 -(void) descriptionOfPerson{
     [super descriptionOfPerson];
+    _age = 19;
     NSLog(@"I'm programmer and my experience is %li year",_progExp);
 }
 @end

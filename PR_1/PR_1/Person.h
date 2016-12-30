@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject{
-    NSString *_name;
-    NSInteger _age;
-    NSString *_address;
+    @public NSString *_name;
+    @protected NSInteger _age;
+    @private NSString *_address;
 }
 
 -(id) initWithName:(NSString *) name andAge:(NSInteger) age;

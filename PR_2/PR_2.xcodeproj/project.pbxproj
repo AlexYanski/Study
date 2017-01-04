@@ -15,6 +15,7 @@
 		3D354EBF1E1CBCD700D1100E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D354EBD1E1CBCD700D1100E /* LaunchScreen.storyboard */; };
 		3D354ECA1E1CBCD700D1100E /* PR_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D354EC91E1CBCD700D1100E /* PR_2Tests.m */; };
 		3D354ED51E1CBCD700D1100E /* PR_2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D354ED41E1CBCD700D1100E /* PR_2UITests.m */; };
+		3D354EE41E1CCD0E00D1100E /* CalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D354EE31E1CCD0E00D1100E /* CalculatorModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3D354ED01E1CBCD700D1100E /* PR_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PR_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D354ED41E1CBCD700D1100E /* PR_2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PR_2UITests.m; sourceTree = "<group>"; };
 		3D354ED61E1CBCD700D1100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D354EE21E1CCD0E00D1100E /* CalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorModel.h; sourceTree = "<group>"; };
+		3D354EE31E1CCD0E00D1100E /* CalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				3D354EB51E1CBCD700D1100E /* ViewController.h */,
 				3D354EB61E1CBCD700D1100E /* ViewController.m */,
 				3D354EB81E1CBCD700D1100E /* Main.storyboard */,
+				3D354EE21E1CCD0E00D1100E /* CalculatorModel.h */,
+				3D354EE31E1CCD0E00D1100E /* CalculatorModel.m */,
 				3D354EBB1E1CBCD700D1100E /* Assets.xcassets */,
 				3D354EBD1E1CBCD700D1100E /* LaunchScreen.storyboard */,
 				3D354EC01E1CBCD700D1100E /* Info.plist */,
@@ -276,6 +281,7 @@
 				3D354EB71E1CBCD700D1100E /* ViewController.m in Sources */,
 				3D354EB41E1CBCD700D1100E /* AppDelegate.m in Sources */,
 				3D354EB11E1CBCD700D1100E /* main.m in Sources */,
+				3D354EE41E1CCD0E00D1100E /* CalculatorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +511,7 @@
 				3D354EDB1E1CBCD700D1100E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D354EDC1E1CBCD700D1100E /* Build configuration list for PBXNativeTarget "PR_2Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				3D354EDE1E1CBCD700D1100E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D354EDF1E1CBCD700D1100E /* Build configuration list for PBXNativeTarget "PR_2UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				3D354EE11E1CBCD700D1100E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

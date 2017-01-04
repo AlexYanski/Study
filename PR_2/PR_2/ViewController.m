@@ -34,7 +34,7 @@
 
 
 - (IBAction)onEqualPressed:(UIButton *)sender {
-    CGFloat value = [self.model performOperand:self.valueLabel.text.floatValue];
+    CGFloat value = [self.model performOperand:self.valueLabel.text.integerValue];
     self.valueLabel.text = [NSString stringWithFormat:@"%f",value];
     self.model.currendOperand = value;
     

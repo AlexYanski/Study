@@ -34,11 +34,17 @@
 
 
 - (IBAction)onEqualPressed:(UIButton *)sender {
-    CGFloat value = [self.model performOperand:self.valueLabel.text.integerValue];
-    self.valueLabel.text = [NSString stringWithFormat:@"%f",value];
+    CGFloat value = [self.model performOperand:self.valueLabel.text.floatValue];
+    NSInteger temp = [self.model performOperand:self.valueLabel.text.integerValue];
+    if (value - temp != 0){
+        self.valueLabel.text = [NSString stringWithFormat:@"%f",value];
+    }
+    else {
+        self.valueLabel.text = [NSString stringWithFormat:@"%li",temp];
+    }
     self.model.currendOperand = value;
-    
 }
+
 - (IBAction)onClearPressed:(UIButton *)sender {
     self.valueLabel.text = @"0";
     self.model.operation = nil;
@@ -56,6 +62,7 @@
         value = @"";
         self.waitNextOperand = NO;
     }
+    
     value = [value stringByAppendingString:sender.titleLabel.text];
     self.valueLabel.text = value;
 }

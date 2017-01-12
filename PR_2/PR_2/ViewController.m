@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.model = [[CalculatorModel alloc] init];
 }
 
@@ -30,7 +29,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 - (IBAction)onEqualPressed:(UIButton *)sender {
@@ -62,9 +60,21 @@
         value = @"";
         self.waitNextOperand = NO;
     }
-    
     value = [value stringByAppendingString:sender.titleLabel.text];
     self.valueLabel.text = value;
+}
+
+- (IBAction)onPlusMinusPressed:(UIButton *)sender {
+    CGFloat tempValue = self.valueLabel.text.floatValue;
+    NSInteger temp = tempValue;
+    if (tempValue - temp != 0){
+        self.valueLabel.text = [NSString stringWithFormat:@"%f", -tempValue];
+    }
+    else {
+        self.valueLabel.text = [NSString stringWithFormat:@"%li",-temp];
+    }
+    
+    self.waitNextOperand = NO;
 }
 
 @end

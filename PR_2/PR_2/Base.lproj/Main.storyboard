@@ -187,7 +187,8 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="onOpertionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDp-bA-CaP"/>
+                                    <action selector="onOperandPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nau-yY-7aD"/>
+                                    <action selector="onOpertionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4N-lw-wlV"/>
                                     <action selector="onSqrtPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVF-Mp-uRd"/>
                                 </connections>
                             </button>
@@ -259,7 +260,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="onOperandPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSJ-jg-26t"/>
+                                    <action selector="onPointPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1T-kD-np7"/>
                                 </connections>
                             </button>
                         </subviews>

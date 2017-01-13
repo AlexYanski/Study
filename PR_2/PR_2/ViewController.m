@@ -80,12 +80,33 @@
 - (IBAction)onSqrtPressed:(UIButton *)sender {
     CGFloat valueSqrt = [self.model performOperand:self.valueLabel.text.floatValue];
     NSInteger tempSqrt = [self.model performOperand:self.valueLabel.text.integerValue];
-    self.valueLabel.text = @"";
-    if (valueSqrt - tempSqrt != 0){
-        self.valueLabel.text = [NSString stringWithFormat:@"√%f",valueSqrt];
+    NSString *str = self.valueLabel.text;
+    for (int i=0; i<str.length; i++) {
+        NSString *element = [str substringWithRange:NSMakeRange(i, 1)];
+        if ([element isEqualToString:@"√"]) {
+            if (valueSqrt - tempSqrt != 0){
+                self.valueLabel.text = [NSString stringWithFormat:@"%f",valueSqrt];
+            }
+            else {
+                self.valueLabel.text = [NSString stringWithFormat:@"%li",tempSqrt];
+            }
+            self.model.operation = nil;
+            self.waitNextOperand = NO;
+        }
     }
-    else {
-        self.valueLabel.text = [NSString stringWithFormat:@"√%li",tempSqrt];
+}
+
+- (IBAction)onPointPressed:(UIButton *)sender {
+    CGFloat valueWithPoint = [self.model performOperand:self.valueLabel.text.floatValue];
+    NSString *strWithPoint = self.valueLabel.text;
+    for (int i=0; i<strWithPoint.length; i++) {
+        NSString *pointElement = [strWithPoint substringWithRange:NSMakeRange(i, 1)];
+        if ([pointElement isEqualToString:@"."]) {
+            //realize
+        }
+        else {
+            //realize
+        }
     }
 }
 

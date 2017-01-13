@@ -97,7 +97,7 @@
 }
 
 - (IBAction)onPointPressed:(UIButton *)sender {
-    CGFloat valueWithPoint = [self.model performOperand:self.valueLabel.text.floatValue];
+    //CGFloat valueWithPoint = [self.model performOperand:self.valueLabel.text.floatValue];
     NSString *strWithPoint = self.valueLabel.text;
     for (int i=0; i<strWithPoint.length; i++) {
         NSString *pointElement = [strWithPoint substringWithRange:NSMakeRange(i, 1)];

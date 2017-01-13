@@ -25,6 +25,9 @@
     else if ([self.operation isEqualToString:@"-"]){
         value -= operand;
     }
+    else if ([self.operation isEqualToString:@"√"]){
+        value = sqrt(operand);
+    }
     return value;
 }
 @end

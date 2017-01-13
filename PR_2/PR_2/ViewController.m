@@ -77,4 +77,16 @@
     self.waitNextOperand = NO;
 }
 
+- (IBAction)onSqrtPressed:(UIButton *)sender {
+    CGFloat valueSqrt = [self.model performOperand:self.valueLabel.text.floatValue];
+    NSInteger tempSqrt = [self.model performOperand:self.valueLabel.text.integerValue];
+    self.valueLabel.text = @"";
+    if (valueSqrt - tempSqrt != 0){
+        self.valueLabel.text = [NSString stringWithFormat:@"√%f",valueSqrt];
+    }
+    else {
+        self.valueLabel.text = [NSString stringWithFormat:@"√%li",tempSqrt];
+    }
+}
+
 @end

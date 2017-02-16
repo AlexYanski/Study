@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsc-qk-Ksk">
+                                <rect key="frame" x="146" y="75" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNl-eo-7jg">
+                                <rect key="frame" x="109" y="104" width="102" height="34"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qI5-ep-Ulb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0m-AR-4wy">
+                                <rect key="frame" x="146" y="253" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0F-ml-qyH">
+                                <rect key="frame" x="115" y="282" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaS-Jb-UGY"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Peanut-butter-jelly-time.gif" translatesAutoresizingMaskIntoConstraints="NO" id="nl4-fj-UVE">
+                                <rect key="frame" x="45" y="320" width="230" height="207"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rsc-qk-Ksk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5f8-fs-0s2"/>
+                            <constraint firstItem="F0m-AR-4wy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7If-IA-kT5"/>
+                            <constraint firstItem="nl4-fj-UVE" firstAttribute="top" secondItem="k0F-ml-qyH" secondAttribute="bottom" constant="8" id="8bJ-F3-k7b"/>
+                            <constraint firstItem="XNl-eo-7jg" firstAttribute="top" secondItem="Rsc-qk-Ksk" secondAttribute="bottom" constant="8" id="NDm-4i-PG2"/>
+                            <constraint firstItem="F0m-AR-4wy" firstAttribute="centerX" secondItem="XNl-eo-7jg" secondAttribute="centerX" id="SzO-20-Gv9"/>
+                            <constraint firstItem="nl4-fj-UVE" firstAttribute="centerX" secondItem="XNl-eo-7jg" secondAttribute="centerX" id="gqk-En-0q7"/>
+                            <constraint firstItem="k0F-ml-qyH" firstAttribute="top" secondItem="F0m-AR-4wy" secondAttribute="bottom" constant="8" id="lXc-z1-CsX"/>
+                            <constraint firstItem="Rsc-qk-Ksk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="psr-dk-4mM"/>
+                            <constraint firstItem="Rsc-qk-Ksk" firstAttribute="centerX" secondItem="XNl-eo-7jg" secondAttribute="centerX" id="rwa-rZ-iAh"/>
+                            <constraint firstItem="F0m-AR-4wy" firstAttribute="top" secondItem="XNl-eo-7jg" secondAttribute="bottom" constant="115" id="srq-Ha-IgH"/>
+                            <constraint firstItem="k0F-ml-qyH" firstAttribute="centerX" secondItem="XNl-eo-7jg" secondAttribute="centerX" id="yOa-wo-yy3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="F0m-AR-4wy" id="BSO-FB-ida"/>
+                        <outlet property="imagePeanutButter" destination="nl4-fj-UVE" id="aQz-Tu-XBR"/>
+                        <outlet property="questionLabel" destination="Rsc-qk-Ksk" id="kJX-lY-m9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.75" y="137.32394366197184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Peanut-butter-jelly-time.gif" width="340" height="325"/>
+    </resources>
+</document>

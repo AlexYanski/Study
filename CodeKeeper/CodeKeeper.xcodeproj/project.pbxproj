@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D01804F1E5F036800AB0EFD /* java.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D01804E1E5F036800AB0EFD /* java.png */; };
 		3D0763701E5C463D001519F5 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D07636F1E5C463D001519F5 /* bgImage.jpg */; };
 		3D442DDB1E5B15B800537CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DDA1E5B15B800537CFF /* AppDelegate.swift */; };
 		3D442DDD1E5B15B800537CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DDC1E5B15B800537CFF /* ViewController.swift */; };
@@ -16,9 +17,13 @@
 		3D442DEE1E5B196600537CFF /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DED1E5B196600537CFF /* Gif.swift */; };
 		3D9DC1701E5DAA250076F6FA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DC16F1E5DAA250076F6FA /* SecondViewController.swift */; };
 		3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */; };
+		3DD052F81E5F07E7000DDEC4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */; };
+		3DD052FA1E5F19D9000DDEC4 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD052F91E5F19D9000DDEC4 /* swift.png */; };
+		3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D01804E1E5F036800AB0EFD /* java.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = java.png; sourceTree = "<group>"; };
 		3D07636F1E5C463D001519F5 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgImage.jpg; sourceTree = "<group>"; };
 		3D442DD71E5B15B800537CFF /* CodeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D442DDA1E5B15B800537CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		3D442DED1E5B196600537CFF /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		3D9DC16F1E5DAA250076F6FA /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3DD052F91E5F19D9000DDEC4 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
+		3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +72,15 @@
 			children = (
 				3D442DDA1E5B15B800537CFF /* AppDelegate.swift */,
 				3D442DDC1E5B15B800537CFF /* ViewController.swift */,
-				3D442DED1E5B196600537CFF /* Gif.swift */,
 				3D9DC16F1E5DAA250076F6FA /* SecondViewController.swift */,
+				3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */,
+				3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */,
 				3D442DDE1E5B15B800537CFF /* Main.storyboard */,
 				3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */,
+				3D442DED1E5B196600537CFF /* Gif.swift */,
 				3D442DE11E5B15B800537CFF /* Assets.xcassets */,
+				3DD052F91E5F19D9000DDEC4 /* swift.png */,
+				3D01804E1E5F036800AB0EFD /* java.png */,
 				3D07636F1E5C463D001519F5 /* bgImage.jpg */,
 				3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */,
 				3D442DE61E5B15B800537CFF /* Info.plist */,
@@ -137,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D442DE51E5B15B800537CFF /* LaunchScreen.storyboard in Resources */,
+				3DD052FA1E5F19D9000DDEC4 /* swift.png in Resources */,
+				3D01804F1E5F036800AB0EFD /* java.png in Resources */,
 				3D442DE21E5B15B800537CFF /* Assets.xcassets in Resources */,
 				3D0763701E5C463D001519F5 /* bgImage.jpg in Resources */,
 				3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */,
@@ -153,7 +167,9 @@
 				3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */,
 				3D9DC1701E5DAA250076F6FA /* SecondViewController.swift in Sources */,
 				3D442DDD1E5B15B800537CFF /* ViewController.swift in Sources */,
+				3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */,
 				3D442DDB1E5B15B800537CFF /* AppDelegate.swift in Sources */,
+				3DD052F81E5F07E7000DDEC4 /* ThirdViewController.swift in Sources */,
 				3D442DEE1E5B196600537CFF /* Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

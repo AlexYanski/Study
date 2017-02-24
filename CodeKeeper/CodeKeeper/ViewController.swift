@@ -16,6 +16,8 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var menuButtonSecond: UIButton!
     @IBOutlet weak var menuButtonThird: UIButton!
     @IBOutlet weak var popButton: UIButton!
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    
     
     var firstButtonCenter: CGPoint!
     var secondButtonCenter: CGPoint!
@@ -24,9 +26,13 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     let transition = CircularTransition()
     
+    var effect:UIVisualEffect!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        effect = visualEffectView.effect
+        visualEffectView.effect = nil
         
         menuButton.layer.cornerRadius = menuButton.frame.size.width / 2
         menuButtonSecond.layer.cornerRadius = menuButtonSecond.frame.size.width / 2
@@ -41,24 +47,36 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         menuButton.center = popButton.center
         menuButtonSecond.center = popButton.center
         menuButtonThird.center = popButton.center
+
     }
+    
+    
     
     @IBAction func popButtonOC(_ sender: UIButton) {
         if sender.currentImage == #imageLiteral(resourceName: "moreOn") {
             sender.setImage(#imageLiteral(resourceName: "moreOff"), for: .normal)
+            UIView.animate(withDuration: 0.2) {
+                //animate blur
+                self.visualEffectView.effect = self.effect
+            }
+
             UIView.animate(withDuration: 0.3, animations: {
+                //animate button
                 self.menuButton.center = self.firstButtonCenter
                 self.menuButtonSecond.center = self.secondButtonCenter
                 self.menuButtonThird.center = self.thirdButtonCenter
-
+                
             })
         } else {
             sender.setImage(#imageLiteral(resourceName: "moreOn"), for: .normal)
+            UIView.animate(withDuration: 0.2) {
+                //animate blur
+                self.visualEffectView.effect = nil
+            }
             UIView.animate(withDuration: 0.3, animations: {
                 self.menuButton.center = self.popButton.center
                 self.menuButtonSecond.center = self.popButton.center
                 self.menuButtonThird.center = self.popButton.center
-                
             })
         }
     }

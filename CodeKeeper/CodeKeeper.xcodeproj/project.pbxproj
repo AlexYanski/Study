@@ -13,10 +13,11 @@
 		3D442DE21E5B15B800537CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DE11E5B15B800537CFF /* Assets.xcassets */; };
 		3D442DE51E5B15B800537CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */; };
 		3D442DEE1E5B196600537CFF /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DED1E5B196600537CFF /* Gif.swift */; };
-		3D9DC1701E5DAA250076F6FA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DC16F1E5DAA250076F6FA /* SecondViewController.swift */; };
 		3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */; };
 		3DD052F81E5F07E7000DDEC4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */; };
 		3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */; };
+		3DD566461E601EA6000F3CAC /* PresentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DD566441E601EA6000F3CAC /* PresentModel.xcdatamodeld */; };
+		3DD5666D1E6030A1000F3CAC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5666C1E6030A1000F3CAC /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		3D442DE41E5B15B800537CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D442DE61E5B15B800537CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D442DED1E5B196600537CFF /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
-		3D9DC16F1E5DAA250076F6FA /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
+		3DD566451E601EA6000F3CAC /* PresentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PresentModel.xcdatamodel; sourceTree = "<group>"; };
+		3DD5666C1E6030A1000F3CAC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +68,11 @@
 			children = (
 				3D442DDA1E5B15B800537CFF /* AppDelegate.swift */,
 				3D442DDC1E5B15B800537CFF /* ViewController.swift */,
-				3D9DC16F1E5DAA250076F6FA /* SecondViewController.swift */,
+				3DD5666C1E6030A1000F3CAC /* SecondViewController.swift */,
 				3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */,
 				3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */,
 				3D442DDE1E5B15B800537CFF /* Main.storyboard */,
+				3DD566441E601EA6000F3CAC /* PresentModel.xcdatamodeld */,
 				3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */,
 				3D442DED1E5B196600537CFF /* Gif.swift */,
 				3D442DE11E5B15B800537CFF /* Assets.xcassets */,
@@ -153,11 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */,
-				3D9DC1701E5DAA250076F6FA /* SecondViewController.swift in Sources */,
 				3D442DDD1E5B15B800537CFF /* ViewController.swift in Sources */,
+				3DD566461E601EA6000F3CAC /* PresentModel.xcdatamodeld in Sources */,
 				3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */,
 				3D442DDB1E5B15B800537CFF /* AppDelegate.swift in Sources */,
 				3DD052F81E5F07E7000DDEC4 /* ThirdViewController.swift in Sources */,
+				3DD5666D1E6030A1000F3CAC /* SecondViewController.swift in Sources */,
 				3D442DEE1E5B196600537CFF /* Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +329,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DD566441E601EA6000F3CAC /* PresentModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DD566451E601EA6000F3CAC /* PresentModel.xcdatamodel */,
+			);
+			currentVersion = 3DD566451E601EA6000F3CAC /* PresentModel.xcdatamodel */;
+			path = PresentModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3D442DCF1E5B15B800537CFF /* Project object */;
 }

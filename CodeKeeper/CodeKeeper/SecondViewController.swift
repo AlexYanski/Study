@@ -9,16 +9,18 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    @IBOutlet weak var dismissButton: UIButton!
     
+    @IBOutlet weak var dismissButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dismissButton.layer.cornerRadius = dismissButton.frame.size.width / 2;
-        
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func showPDFButtonFirst(_ sender: Any) {
+        
+    }
+    
     @IBAction func dismissSecondVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
 

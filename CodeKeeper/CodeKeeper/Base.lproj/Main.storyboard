@@ -203,13 +203,17 @@
                                 <rect key="frame" x="0.0" y="76" width="375" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="javaBookFirst"/>
+                                <connections>
+                                    <action selector="showPDFButtonFirst:" destination="rP2-ob-uik" eventType="touchUpInside" id="sgn-th-hd7"/>
+                                    <segue destination="gyM-9J-htp" kind="show" id="KXh-OV-BeU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icc-tY-nKV">
                                 <rect key="frame" x="0.0" y="264" width="375" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="javaBookSecond"/>
                             </button>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJc-Ov-LGV">
+                            <visualEffectView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJc-Ov-LGV">
                                 <rect key="frame" x="0.0" y="76" width="375" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Rt5-jd-0tj">
@@ -283,6 +287,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cjv-N8-gN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882.39999999999998" y="-502.39880059970017"/>
+        </scene>
+        <!--Java View Controller-->
+        <scene sceneID="31g-6g-fhO">
+            <objects>
+                <viewController id="gyM-9J-htp" customClass="PDFJavaViewController" customModule="CodeKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WlW-Dw-XMF"/>
+                        <viewControllerLayoutGuide type="bottom" id="jME-nO-I34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XCd-vR-yRi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-5t-Sbf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-3F-E5N">
+                                <rect key="frame" x="337" y="28" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="close">
+                                    <color key="titleColor" red="8.1484235120000002e-05" green="0.2028100491" blue="0.40217611190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissPDFVC:" destination="gyM-9J-htp" eventType="touchUpInside" id="eIe-uH-3ql"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35992100834846497" green="0.38806819915771484" blue="0.40479391813278198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissOutlet" destination="ypz-3F-E5N" id="bgE-dP-V4b"/>
+                        <outlet property="webView" destination="dRc-5t-Sbf" id="O25-zz-nOA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLW-uY-1hA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5999999999999" y="-502.39880059970017"/>
         </scene>
     </scenes>
     <resources>

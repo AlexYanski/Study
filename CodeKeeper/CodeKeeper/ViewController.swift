@@ -47,7 +47,7 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         menuButton.center = popButton.center
         menuButtonSecond.center = popButton.center
         menuButtonThird.center = popButton.center
-
+        
     }
     
     

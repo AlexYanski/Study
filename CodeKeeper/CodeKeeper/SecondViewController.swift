@@ -10,17 +10,27 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var firstJavaButton: UIButton!
+    @IBOutlet weak var secondJavaButton: UIButton!
     @IBOutlet weak var dismissButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dismissButton.layer.cornerRadius = dismissButton.frame.size.width / 2;
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func showPDFButtonFirst(_ sender: Any) {
-        
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if firstJavaButton.isTouchInside {
+            let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
+            destViewController.temp = 1
+        } else if secondJavaButton.isTouchInside {
+            let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
+            destViewController.temp = 2
+        }
+        
+    }
+   
     @IBAction func dismissSecondVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
 

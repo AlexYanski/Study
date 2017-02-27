@@ -13,13 +13,21 @@ class PDFJavaViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var dismissOutlet: UIButton!
     
+    var temp = NSInteger()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissOutlet.layer.cornerRadius = dismissOutlet.frame.size.width / 2;
-
-        let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaFirst", ofType: "pdf")!)
-        let request = URLRequest(url: path as URL)
-        webView.loadRequest(request)
+        print(temp)
+        if temp == 1 {
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaFirst", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+        } else if temp == 2 {
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaSecond", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+        }
     }
     
     @IBAction func dismissPDFVC(_ sender: Any) {

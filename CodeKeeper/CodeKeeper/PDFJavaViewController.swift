@@ -17,8 +17,7 @@ class PDFJavaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dismissOutlet.layer.cornerRadius = dismissOutlet.frame.size.width / 2;
-        print(temp)
+        //dismissOutlet.layer.cornerRadius = dismissOutlet.frame.size.width / 2;
         if temp == 1 {
             let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaFirst", ofType: "pdf")!)
             let request = URLRequest(url: path as URL)
@@ -29,6 +28,10 @@ class PDFJavaViewController: UIViewController {
             webView.loadRequest(request)
         } else if temp == 3 {
             let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaThird", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+        } else if temp == 4 {
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "CppFirst", ofType: "pdf")!)
             let request = URLRequest(url: path as URL)
             webView.loadRequest(request)
         }

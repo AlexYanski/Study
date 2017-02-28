@@ -11,6 +11,7 @@ import UIKit
 class ThirdViewController: UIViewController {
 
     @IBOutlet weak var dismissButtonSecond: UIButton!
+    @IBOutlet weak var firstCppButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,13 @@ class ThirdViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
+        if firstCppButton.isTouchInside {
+            destViewController.temp = 4
+        }
+    }
+    
     @IBAction func dismissThirdVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0276181E65CC73006C8B23 /* CppFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0276171E65CC73006C8B23 /* CppFirst.pdf */; };
 		3D442DDB1E5B15B800537CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DDA1E5B15B800537CFF /* AppDelegate.swift */; };
 		3D442DDD1E5B15B800537CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DDC1E5B15B800537CFF /* ViewController.swift */; };
 		3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DDE1E5B15B800537CFF /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0276171E65CC73006C8B23 /* CppFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppFirst.pdf; sourceTree = "<group>"; };
 		3D442DD71E5B15B800537CFF /* CodeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D442DDA1E5B15B800537CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D442DDC1E5B15B800537CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0276191E65D091006C8B23 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */,
+				3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */,
+				3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */,
+				3D0276171E65CC73006C8B23 /* CppFirst.pdf */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
 		3D442DCE1E5B15B800537CFF = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +97,7 @@
 				3D442DE11E5B15B800537CFF /* Assets.xcassets */,
 				3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */,
 				3D442DE61E5B15B800537CFF /* Info.plist */,
-				3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */,
-				3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */,
-				3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */,
+				3D0276191E65D091006C8B23 /* Books */,
 			);
 			path = CodeKeeper;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 				3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */,
 				3DC9E57F1E6403B5002D4D41 /* JavaFirst.pdf in Resources */,
 				3DC2CA581E64BB7600DFF3C1 /* JavaSecond.pdf in Resources */,
+				3D0276181E65CC73006C8B23 /* CppFirst.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

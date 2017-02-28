@@ -12,6 +12,7 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var firstJavaButton: UIButton!
     @IBOutlet weak var secondJavaButton: UIButton!
+    @IBOutlet weak var thirdJavaButton: UIButton!
     @IBOutlet weak var dismissButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +22,13 @@ class SecondViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
         if firstJavaButton.isTouchInside {
-            let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
             destViewController.temp = 1
         } else if secondJavaButton.isTouchInside {
-            let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
             destViewController.temp = 2
+        } else if thirdJavaButton.isTouchInside {
+            destViewController.temp = 3
         }
         
     }

@@ -27,6 +27,10 @@ class PDFJavaViewController: UIViewController {
             let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaSecond", ofType: "pdf")!)
             let request = URLRequest(url: path as URL)
             webView.loadRequest(request)
+        } else if temp == 3 {
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaThird", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
         }
     }
     

@@ -16,6 +16,7 @@
 		3DC2CA581E64BB7600DFF3C1 /* JavaSecond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */; };
 		3DC9E57D1E64003E002D4D41 /* PDFJavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC9E57C1E64003E002D4D41 /* PDFJavaViewController.swift */; };
 		3DC9E57F1E6403B5002D4D41 /* JavaFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */; };
+		3DCD8FF31E656DAF00F00921 /* JavaThird.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */; };
 		3DD052F81E5F07E7000DDEC4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */; };
 		3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */; };
 		3DD566461E601EA6000F3CAC /* PresentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DD566441E601EA6000F3CAC /* PresentModel.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 		3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaSecond.pdf; sourceTree = "<group>"; };
 		3DC9E57C1E64003E002D4D41 /* PDFJavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFJavaViewController.swift; sourceTree = "<group>"; };
 		3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaFirst.pdf; sourceTree = "<group>"; };
+		3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaThird.pdf; sourceTree = "<group>"; };
 		3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		3DD566451E601EA6000F3CAC /* PresentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PresentModel.xcdatamodel; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				3D442DE11E5B15B800537CFF /* Assets.xcassets */,
 				3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */,
 				3D442DE61E5B15B800537CFF /* Info.plist */,
+				3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */,
 				3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */,
 				3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */,
 			);
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCD8FF31E656DAF00F00921 /* JavaThird.pdf in Resources */,
 				3D442DE51E5B15B800537CFF /* LaunchScreen.storyboard in Resources */,
 				3D442DE21E5B15B800537CFF /* Assets.xcassets in Resources */,
 				3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */,

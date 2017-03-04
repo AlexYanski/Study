@@ -12,6 +12,8 @@ class ThirdViewController: UIViewController {
 
     @IBOutlet weak var dismissButtonSecond: UIButton!
     @IBOutlet weak var firstCppButton: UIButton!
+    @IBOutlet weak var secondCppButton: UIButton!
+    @IBOutlet weak var thirdCppButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,10 @@ class ThirdViewController: UIViewController {
         let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
         if firstCppButton.isTouchInside {
             destViewController.temp = 4
+        } else if secondCppButton.isTouchInside {
+            destViewController.temp = 5
+        } else if thirdCppButton.isTouchInside {
+            destViewController.temp = 6
         }
     }
     

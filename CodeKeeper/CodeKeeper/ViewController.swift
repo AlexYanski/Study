@@ -50,8 +50,6 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         
     }
     
-    
-    
     @IBAction func popButtonOC(_ sender: UIButton) {
         if sender.currentImage == #imageLiteral(resourceName: "moreOn") {
             sender.setImage(#imageLiteral(resourceName: "moreOff"), for: .normal)

@@ -18,7 +18,40 @@ class PDFJavaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //dismissOutlet.layer.cornerRadius = dismissOutlet.frame.size.width / 2;
-        if temp == 1 {
+        switch temp {
+        case 1:
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaFirst", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+            break
+        case 2:
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaSecond", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+            break
+        case 3:
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaThird", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+            break
+        case 4:
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "CppFirst", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+            break
+        case 5:
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "CppSecond", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+            break
+        case 6:
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "CppThird", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+            break
+        default: return
+        }
+        /*if temp == 1 {
             let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaFirst", ofType: "pdf")!)
             let request = URLRequest(url: path as URL)
             webView.loadRequest(request)
@@ -34,7 +67,7 @@ class PDFJavaViewController: UIViewController {
             let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "CppFirst", ofType: "pdf")!)
             let request = URLRequest(url: path as URL)
             webView.loadRequest(request)
-        }
+        }*/
     }
     
     @IBAction func dismissPDFVC(_ sender: Any) {

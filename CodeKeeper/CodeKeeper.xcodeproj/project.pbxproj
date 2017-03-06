@@ -15,7 +15,7 @@
 		3D442DE51E5B15B800537CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */; };
 		3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */; };
 		3DA453891E6AD6C7001B9858 /* CppSecond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA453881E6AD6C7001B9858 /* CppSecond.pdf */; };
-		3DA4538B1E6AFD9B001B9858 /* CppThird.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA4538A1E6AFD9B001B9858 /* CppThird.pdf */; };
+		3DAFF7101E6DDDAE00089571 /* CppThird.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */; };
 		3DC2CA581E64BB7600DFF3C1 /* JavaSecond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */; };
 		3DC9E57D1E64003E002D4D41 /* PDFJavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC9E57C1E64003E002D4D41 /* PDFJavaViewController.swift */; };
 		3DC9E57F1E6403B5002D4D41 /* JavaFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */; };
@@ -37,7 +37,7 @@
 		3D442DE61E5B15B800537CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		3DA453881E6AD6C7001B9858 /* CppSecond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppSecond.pdf; sourceTree = "<group>"; };
-		3DA4538A1E6AFD9B001B9858 /* CppThird.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppThird.pdf; sourceTree = "<group>"; };
+		3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppThird.pdf; sourceTree = "<group>"; };
 		3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaSecond.pdf; sourceTree = "<group>"; };
 		3DC9E57C1E64003E002D4D41 /* PDFJavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFJavaViewController.swift; sourceTree = "<group>"; };
 		3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaFirst.pdf; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 				3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */,
 				3D0276171E65CC73006C8B23 /* CppFirst.pdf */,
 				3DA453881E6AD6C7001B9858 /* CppSecond.pdf */,
-				3DA4538A1E6AFD9B001B9858 /* CppThird.pdf */,
+				3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */,
 			);
 			name = Books;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 				3DA453891E6AD6C7001B9858 /* CppSecond.pdf in Resources */,
 				3DC9E57F1E6403B5002D4D41 /* JavaFirst.pdf in Resources */,
 				3DC2CA581E64BB7600DFF3C1 /* JavaSecond.pdf in Resources */,
-				3DA4538B1E6AFD9B001B9858 /* CppThird.pdf in Resources */,
+				3DAFF7101E6DDDAE00089571 /* CppThird.pdf in Resources */,
 				3D0276181E65CC73006C8B23 /* CppFirst.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Lonely-Tree-Std.CodeKeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -336,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Lonely-Tree-Std.CodeKeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

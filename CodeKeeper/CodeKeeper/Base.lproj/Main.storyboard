@@ -297,7 +297,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.41176470588235292" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98220473527908325" green="0.40990608930587769" blue="0.185721755027771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="dismissButtonThird" destination="SbP-GC-Afx" id="CXY-Lh-GSo"/>

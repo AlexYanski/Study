@@ -13,6 +13,7 @@
 		3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DDE1E5B15B800537CFF /* Main.storyboard */; };
 		3D442DE21E5B15B800537CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DE11E5B15B800537CFF /* Assets.xcassets */; };
 		3D442DE51E5B15B800537CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */; };
+		3D46D26B1E7FB68400F12487 /* SwiftFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D46D26A1E7FB68400F12487 /* SwiftFirst.pdf */; };
 		3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */; };
 		3DA453891E6AD6C7001B9858 /* CppSecond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA453881E6AD6C7001B9858 /* CppSecond.pdf */; };
 		3DAFF7101E6DDDAE00089571 /* CppThird.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */; };
@@ -35,6 +36,7 @@
 		3D442DE11E5B15B800537CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D442DE41E5B15B800537CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D442DE61E5B15B800537CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D46D26A1E7FB68400F12487 /* SwiftFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SwiftFirst.pdf; sourceTree = "<group>"; };
 		3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		3DA453881E6AD6C7001B9858 /* CppSecond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppSecond.pdf; sourceTree = "<group>"; };
 		3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppThird.pdf; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				3D0276171E65CC73006C8B23 /* CppFirst.pdf */,
 				3DA453881E6AD6C7001B9858 /* CppSecond.pdf */,
 				3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */,
+				3D46D26A1E7FB68400F12487 /* SwiftFirst.pdf */,
 			);
 			name = Books;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				3D442DE21E5B15B800537CFF /* Assets.xcassets in Resources */,
 				3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */,
 				3DA453891E6AD6C7001B9858 /* CppSecond.pdf in Resources */,
+				3D46D26B1E7FB68400F12487 /* SwiftFirst.pdf in Resources */,
 				3DC9E57F1E6403B5002D4D41 /* JavaFirst.pdf in Resources */,
 				3DC2CA581E64BB7600DFF3C1 /* JavaSecond.pdf in Resources */,
 				3DAFF7101E6DDDAE00089571 /* CppThird.pdf in Resources */,

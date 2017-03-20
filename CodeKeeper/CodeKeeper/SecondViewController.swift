@@ -14,10 +14,13 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var secondJavaButton: UIButton!
     @IBOutlet weak var thirdJavaButton: UIButton!
     @IBOutlet weak var dismissButton: UIButton!
+    @IBOutlet weak var questionButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dismissButton.layer.cornerRadius = dismissButton.frame.size.width / 2;
+        questionButton.layer.cornerRadius = questionButton.frame.size.width / 2;
     }
     
     

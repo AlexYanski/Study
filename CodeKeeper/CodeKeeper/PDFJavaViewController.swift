@@ -49,6 +49,11 @@ class PDFJavaViewController: UIViewController {
             let request = URLRequest(url: path as URL)
             webView.loadRequest(request)
             break
+        case 7:
+            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "SwiftFirst", ofType: "pdf")!)
+            let request = URLRequest(url: path as URL)
+            webView.loadRequest(request)
+            break
         default: return
         }
         /*if temp == 1 {

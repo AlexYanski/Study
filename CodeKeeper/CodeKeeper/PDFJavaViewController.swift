@@ -56,23 +56,7 @@ class PDFJavaViewController: UIViewController {
             break
         default: return
         }
-        /*if temp == 1 {
-            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaFirst", ofType: "pdf")!)
-            let request = URLRequest(url: path as URL)
-            webView.loadRequest(request)
-        } else if temp == 2 {
-            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaSecond", ofType: "pdf")!)
-            let request = URLRequest(url: path as URL)
-            webView.loadRequest(request)
-        } else if temp == 3 {
-            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "JavaThird", ofType: "pdf")!)
-            let request = URLRequest(url: path as URL)
-            webView.loadRequest(request)
-        } else if temp == 4 {
-            let path = NSURL(fileURLWithPath: Bundle.main.path(forResource: "CppFirst", ofType: "pdf")!)
-            let request = URLRequest(url: path as URL)
-            webView.loadRequest(request)
-        }*/
+        
     }
     
     @IBAction func dismissPDFVC(_ sender: Any) {

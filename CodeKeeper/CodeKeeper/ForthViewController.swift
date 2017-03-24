@@ -12,18 +12,24 @@ class ForthViewController: UIViewController {
 
     @IBOutlet weak var dismissButtonThird: UIButton!
     @IBOutlet weak var firstSwiftButton: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         dismissButtonThird.layer.cornerRadius = dismissButtonThird.frame.size.width / 2;
+        helpButton.layer.cornerRadius = helpButton.frame.size.width / 2;
+
         // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
         if firstSwiftButton.isTouchInside {
-            destViewController.temp = 7
+        let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
+        destViewController.temp = 7
+        } else if helpButton.isTouchInside {
+            let tempViewController: HelpViewController = segue.destination as! HelpViewController
+            tempViewController.helpTemp = 3
         }
     }
     

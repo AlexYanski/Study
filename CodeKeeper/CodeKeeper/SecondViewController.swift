@@ -25,13 +25,18 @@ class SecondViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
-        if firstJavaButton.isTouchInside {
-            destViewController.temp = 1
-        } else if secondJavaButton.isTouchInside {
-            destViewController.temp = 2
-        } else if thirdJavaButton.isTouchInside {
-            destViewController.temp = 3
+        if firstJavaButton.isTouchInside || secondJavaButton.isTouchInside || thirdJavaButton.isTouchInside {
+            let destViewController: PDFJavaViewController = segue.destination as! PDFJavaViewController
+            if firstJavaButton.isTouchInside {
+                destViewController.temp = 1
+            } else if secondJavaButton.isTouchInside {
+                destViewController.temp = 2
+            } else if thirdJavaButton.isTouchInside {
+                destViewController.temp = 3
+            }
+        } else if questionButton.isTouchInside {
+            let tempViewController: HelpViewController = segue.destination as! HelpViewController
+            tempViewController.helpTemp = 1
         }
         
     }

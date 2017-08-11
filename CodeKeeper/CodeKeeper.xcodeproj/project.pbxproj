@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D0276181E65CC73006C8B23 /* CppFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0276171E65CC73006C8B23 /* CppFirst.pdf */; };
+		3D405C661ED9861C009A3660 /* JavaFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D405C651ED9861C009A3660 /* JavaFirst.pdf */; };
+		3D405C681ED9863A009A3660 /* CppSecond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D405C671ED9863A009A3660 /* CppSecond.pdf */; };
 		3D442DDB1E5B15B800537CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DDA1E5B15B800537CFF /* AppDelegate.swift */; };
 		3D442DDD1E5B15B800537CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D442DDC1E5B15B800537CFF /* ViewController.swift */; };
 		3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DDE1E5B15B800537CFF /* Main.storyboard */; };
@@ -15,11 +17,9 @@
 		3D442DE51E5B15B800537CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */; };
 		3D46D26B1E7FB68400F12487 /* SwiftFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D46D26A1E7FB68400F12487 /* SwiftFirst.pdf */; };
 		3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */; };
-		3DA453891E6AD6C7001B9858 /* CppSecond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA453881E6AD6C7001B9858 /* CppSecond.pdf */; };
 		3DAFF7101E6DDDAE00089571 /* CppThird.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */; };
 		3DC2CA581E64BB7600DFF3C1 /* JavaSecond.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */; };
 		3DC9E57D1E64003E002D4D41 /* PDFJavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC9E57C1E64003E002D4D41 /* PDFJavaViewController.swift */; };
-		3DC9E57F1E6403B5002D4D41 /* JavaFirst.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */; };
 		3DCD8FF31E656DAF00F00921 /* JavaThird.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */; };
 		3DD052F81E5F07E7000DDEC4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */; };
 		3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */; };
@@ -30,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		3D0276171E65CC73006C8B23 /* CppFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppFirst.pdf; sourceTree = "<group>"; };
+		3D405C651ED9861C009A3660 /* JavaFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaFirst.pdf; sourceTree = "<group>"; };
+		3D405C671ED9863A009A3660 /* CppSecond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppSecond.pdf; sourceTree = "<group>"; };
 		3D442DD71E5B15B800537CFF /* CodeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D442DDA1E5B15B800537CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D442DDC1E5B15B800537CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,11 +41,9 @@
 		3D442DE61E5B15B800537CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D46D26A1E7FB68400F12487 /* SwiftFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SwiftFirst.pdf; sourceTree = "<group>"; };
 		3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
-		3DA453881E6AD6C7001B9858 /* CppSecond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppSecond.pdf; sourceTree = "<group>"; };
 		3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CppThird.pdf; sourceTree = "<group>"; };
 		3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaSecond.pdf; sourceTree = "<group>"; };
 		3DC9E57C1E64003E002D4D41 /* PDFJavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFJavaViewController.swift; sourceTree = "<group>"; };
-		3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaFirst.pdf; sourceTree = "<group>"; };
 		3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaThird.pdf; sourceTree = "<group>"; };
 		3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
@@ -66,11 +66,11 @@
 		3D0276191E65D091006C8B23 /* Books */ = {
 			isa = PBXGroup;
 			children = (
+				3D405C651ED9861C009A3660 /* JavaFirst.pdf */,
 				3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */,
 				3DC2CA571E64BB7600DFF3C1 /* JavaSecond.pdf */,
-				3DC9E57E1E6403B5002D4D41 /* JavaFirst.pdf */,
 				3D0276171E65CC73006C8B23 /* CppFirst.pdf */,
-				3DA453881E6AD6C7001B9858 /* CppSecond.pdf */,
+				3D405C671ED9863A009A3660 /* CppSecond.pdf */,
 				3DAFF70F1E6DDDAE00089571 /* CppThird.pdf */,
 				3D46D26A1E7FB68400F12487 /* SwiftFirst.pdf */,
 			);
@@ -177,10 +177,10 @@
 				3DCD8FF31E656DAF00F00921 /* JavaThird.pdf in Resources */,
 				3D442DE51E5B15B800537CFF /* LaunchScreen.storyboard in Resources */,
 				3D442DE21E5B15B800537CFF /* Assets.xcassets in Resources */,
+				3D405C661ED9861C009A3660 /* JavaFirst.pdf in Resources */,
+				3D405C681ED9863A009A3660 /* CppSecond.pdf in Resources */,
 				3D442DE01E5B15B800537CFF /* Main.storyboard in Resources */,
-				3DA453891E6AD6C7001B9858 /* CppSecond.pdf in Resources */,
 				3D46D26B1E7FB68400F12487 /* SwiftFirst.pdf in Resources */,
-				3DC9E57F1E6403B5002D4D41 /* JavaFirst.pdf in Resources */,
 				3DC2CA581E64BB7600DFF3C1 /* JavaSecond.pdf in Resources */,
 				3DAFF7101E6DDDAE00089571 /* CppThird.pdf in Resources */,
 				3D0276181E65CC73006C8B23 /* CppFirst.pdf in Resources */,

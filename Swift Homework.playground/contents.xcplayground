@@ -3,5 +3,7 @@
     <pages>
         <page name='Lesson#01'/>
         <page name='Lesson#02'/>
+        <page name='Lesson#03'/>
+        <page name='Lesson#04'/>
     </pages>
 </playground>

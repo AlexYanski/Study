@@ -23,7 +23,6 @@
 		3DCD8FF31E656DAF00F00921 /* JavaThird.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */; };
 		3DD052F81E5F07E7000DDEC4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */; };
 		3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */; };
-		3DD566461E601EA6000F3CAC /* PresentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DD566441E601EA6000F3CAC /* PresentModel.xcdatamodeld */; };
 		3DD5666D1E6030A1000F3CAC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5666C1E6030A1000F3CAC /* SecondViewController.swift */; };
 		3DDD03661E84EEEC00BA9AD9 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD03651E84EEEC00BA9AD9 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		3DCD8FF21E656DAF00F00921 /* JavaThird.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JavaThird.pdf; sourceTree = "<group>"; };
 		3DD052F71E5F07E7000DDEC4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3DD052FB1E5F1AA8000DDEC4 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
-		3DD566451E601EA6000F3CAC /* PresentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PresentModel.xcdatamodel; sourceTree = "<group>"; };
 		3DD5666C1E6030A1000F3CAC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3DDD03651E84EEEC00BA9AD9 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +102,6 @@
 				3D442DDE1E5B15B800537CFF /* Main.storyboard */,
 				3DDD03651E84EEEC00BA9AD9 /* HelpViewController.swift */,
 				3DC9E57C1E64003E002D4D41 /* PDFJavaViewController.swift */,
-				3DD566441E601EA6000F3CAC /* PresentModel.xcdatamodeld */,
 				3D9DC1711E5EA8ED0076F6FA /* CircularTransition.swift */,
 				3D442DE11E5B15B800537CFF /* Assets.xcassets */,
 				3D442DE31E5B15B800537CFF /* LaunchScreen.storyboard */,
@@ -141,12 +138,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Alexandr Yanski";
 				TargetAttributes = {
 					3D442DD61E5B15B800537CFF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RRULVPPFF3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -196,7 +194,6 @@
 			files = (
 				3D9DC1721E5EA8ED0076F6FA /* CircularTransition.swift in Sources */,
 				3D442DDD1E5B15B800537CFF /* ViewController.swift in Sources */,
-				3DD566461E601EA6000F3CAC /* PresentModel.xcdatamodeld in Sources */,
 				3DD052FC1E5F1AA8000DDEC4 /* ForthViewController.swift in Sources */,
 				3DDD03661E84EEEC00BA9AD9 /* HelpViewController.swift in Sources */,
 				3D442DDB1E5B15B800537CFF /* AppDelegate.swift in Sources */,
@@ -237,7 +234,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -245,7 +244,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -268,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +290,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -295,7 +300,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -312,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -330,7 +339,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lonely-Tree-Std.CodeKeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -344,7 +354,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lonely-Tree-Std.CodeKeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -371,19 +382,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3DD566441E601EA6000F3CAC /* PresentModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3DD566451E601EA6000F3CAC /* PresentModel.xcdatamodel */,
-			);
-			currentVersion = 3DD566451E601EA6000F3CAC /* PresentModel.xcdatamodel */;
-			path = PresentModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3D442DCF1E5B15B800537CFF /* Project object */;
 }

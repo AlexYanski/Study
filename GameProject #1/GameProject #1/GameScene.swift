@@ -51,7 +51,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
 
-        background.zPosition = -1
+        background.zPosition = -10
         for i in 0...1 {
             let background = backgroundNode()
             background.anchorPoint = CGPoint.zero
@@ -130,9 +130,11 @@ class GameScene: SKScene {
         let background2 = SKSpriteNode(imageNamed: "background2")
         background2.anchorPoint = CGPoint.zero
         background2.position = CGPoint(x: background1.size.width, y: 0)
+       // background2.zPosition = -11
         backgroundNode.addChild(background2)
         backgroundNode.size = CGSize(width: background1.size.width + background2.size.width,
                                      height: background1.size.height)
+        backgroundNode.zPosition = -10
         return backgroundNode
     }
     
@@ -217,11 +219,11 @@ class GameScene: SKScene {
     func spawnEnemy() {
         let enemy = SKSpriteNode(imageNamed: "enemy")
         enemy.name = "enemy"
-        enemy.position = CGPoint(x: size.width + enemy.size.width/2,
+        enemy.position = CGPoint(x: cameraRect.maxX + enemy.size.width/2,
                                  y: CGFloat.random(min: playableRect.minY + enemy.size.height/2,
                                                    max: playableRect.maxY - enemy.size.height/2))
         addChild(enemy)
-        let actionMove = SKAction.moveTo(x: -enemy.size.width/2, duration: 2.0)
+        let actionMove = SKAction.moveTo(x: cameraRect.minX/2, duration: 2.0)
         
         let actionRemove = SKAction.removeFromParent()
         enemy.run(SKAction.sequence([actionMove, actionRemove]))

@@ -36,6 +36,10 @@ class GameScene: SKScene {
     
     let playableRect: CGRect
     
+    var familyIndex: Int = -1
+    
+    
+    
     var cameraRect : CGRect {
         let x = cameraNode.position.x - size.width/2
             + (size.width - playableRect.width)/2
@@ -177,6 +181,7 @@ class GameScene: SKScene {
         }
         let touchLocation = touch.location(in: self)
         sceneTouched(touchLocation: touchLocation)
+        showNextFamily()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -398,7 +403,30 @@ class GameScene: SKScene {
             if loseCount >= 2 {
                 stop[0] = true
             }
-        } }
+        }
+    }
+    
+    func showCurrentFamily() -> Bool {
+        removeAllChildren()
+        let familyName = UIFont.familyNames[familyIndex]
+        let fontNames = UIFont.fontNames(forFamilyName: familyName)
+        if fontNames.count == 0 {
+            return false
+        }
+        print("Family: \(familyName)")
+        for (idx, fontName) in fontNames.enumerated() {
+            let label = SKLabelNode(fontNamed: fontName)
+            label.text = fontName
+            label.position = CGPoint(
+                x: size.width / 2,
+                y: (size.height * (CGFloat(idx+1))) /
+                    (CGFloat(fontNames.count)+1))
+            label.fontSize = 50
+            label.verticalAlignmentMode = .center
+            addChild(label)
+        }
+        return true
+    }
     
     override init(size: CGSize) {
         let maxAspectRatio: CGFloat = 16.0 / 9.0
@@ -417,8 +445,20 @@ class GameScene: SKScene {
         zombieAnimation = SKAction.animate(with: textures, timePerFrame: 0.1)
         
         super.init(size: size)
-
+        showNextFamily()
     }
+    
+    func showNextFamily() {
+        var familyShown = false
+        repeat {
+                familyIndex += 1
+                if familyIndex >= UIFont.familyNames.count {
+                    familyIndex = 0
+                }
+                familyShown = showCurrentFamily()
+            } while !familyShown
+        }
+    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

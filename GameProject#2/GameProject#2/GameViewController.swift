@@ -1,8 +1,8 @@
 //
 //  GameViewController.swift
-//  ColorGame
+//  GameProject#2
 //
-//  Created by Alexandr Yanski on 27.10.2017.
+//  Created by Alexandr Yanski on 04.11.2017.
 //  Copyright © 2017 Alexandr Yanski. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "StartScene") {
+            if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 

@@ -75,9 +75,9 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
             location = latestLocatuion
             stopLocationManager()
             
-            let cordinateSpan: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+            let cordinateSpan: MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.01, longitudeDelta: 0.01)
             let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake((location?.coordinate.latitude)!, (location?.coordinate.longitude)!)
-            let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, cordinateSpan)
+            let region: MKCoordinateRegion = MKCoordinateRegion.init(center: myLocation, span: cordinateSpan)
             
             myLatitude = location?.coordinate.latitude
             myLongitude = location?.coordinate.longitude
